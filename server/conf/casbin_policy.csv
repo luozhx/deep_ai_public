@@ -1,0 +1,13 @@
+# role
+g, role::teacher, role::student
+g, role::admin, role::teacher
+
+# role policy
+p, role::admin, /*, *
+
+# user role
+g, admin, role::admin
+g, member, role::member
+
+# user policy
+p, anonymous, /api/user, *
